@@ -1,0 +1,231 @@
+/*GLOBALES*/
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width:1200px;
+    font-family: 'Franklin Gothic Medium';
+    color: gray;
+    background-color: rgb(235, 235, 203);
+}
+.carrito{
+    width: 40px;
+    height: 40px;
+    stroke: black;
+
+}
+.carrito{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*ESTILOS HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+    font-style: italic;
+}
+
+.container{
+    position: relative;
+}
+input{
+    padding: 15px;
+    padding-right: 60px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: gray;
+}
+.buscador{
+    display: flex;
+    background-color: crimson;
+    padding: 10px 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0; 
+    color: white;
+    cursor: pointer;
+}
+.buscador:hover{
+    background-color: rgb(167, 13, 13);
+}
+
+.conteinericon{
+    position: relative;
+}
+.contproducts{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.conteinercarrito{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.carritoproduct{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+.infoproduct{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.iconclose{
+   width: 25px;
+   height: 25px;
+}
+.iconclose:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cantidadproducto{
+    font-weight: 500;
+    font-size: 20px;
+}
+.tituloproducto{
+    font-size: 20px;
+}
+.precioproducto{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.carttotal{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.carttotal h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.totalpagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hiddencarrito{
+    display: none;
+}
+
+
+
+/*MAIN*/
+
+.conteineritems{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;   
+}
+
+.item{
+    border-radius: 10px;
+   
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;  
+    object-fit: cover;
+    border-radius: 10px 10 px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+transform: scale(1.2);
+}
+
+.infoproducto{
+    padding: 15px 30px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.infoproducto button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor:pointer;
+}
+/*footer*/
+
+footer{
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.fotitems{
+    display: block;
+    columns: 3;
+    line-height: 1.5;
+    gap: 50px;
+    background-color: white;
+}
+.pago{
+    border-radius: 10px;
+    padding:35px 24px 20px;
+}
+.iconfot{
+    width: 100%;
+    height: 100px;
+}
